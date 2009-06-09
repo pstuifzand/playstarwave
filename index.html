@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Starwave</title>
+        <style>
+            html{margin:0;padding:0;}
+            body{margin:0;padding:0;}
+            canvas { cursor: crosshair; }
+        </style>
+    </head>
+
+    <body>
+        <h1>Starwave</h1>
+        <table>
+            <tr><td>Score:</td><td><span id='score'></span></td></tr>
+            <tr><td>Lives:</td><td><span id='lives'></span></td></tr>
+            <tr><td>Bullets:</td><td><span id='bullets'></span></td></tr>
+        </table>
+        
+        <p>
+        <button id="playpause">Pause</button>
+        </p>
+        <h2>Level <span id="level"></span></h2>
+
+            <canvas id="starwave" width="640" height="480"></canvas>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script src="starwave.js"></script>
+    </body>
+</html>
