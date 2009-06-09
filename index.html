@@ -10,18 +10,20 @@
 
     <body>
         <h1>Starwave</h1>
+        
+        <h2>Level <span id="level"></span></h2>
         <table>
-            <tr><td>Score:</td><td><span id='score'></span></td></tr>
-            <tr><td>Lives:</td><td><span id='lives'></span></td></tr>
-            <tr><td>Bullets:</td><td><span id='bullets'></span></td></tr>
+            <tr><td>Score:</td><td><span id='score'></span></td><td>Lives:</td><td><span id='lives'></span></td><td>Bullets:</td><td><span id='bullets'></span></td></tr>
         </table>
         
-        <p>
-        <button id="playpause">Pause</button>
-        </p>
-        <h2>Level <span id="level"></span></h2>
+        <p><button id="playpause">Play</button></p>
 
-            <canvas id="starwave" width="640" height="480"></canvas>
+        <canvas id="starwave" width="640" height="480">
+            <p>To be able to play Starwave you need a modern browser that
+            supports Canvas. This game is tested on <a
+                href="http://getfirefox.com">Firefox 3.0.10</a>.</p>
+        </canvas>
+
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
         <script src="starwave.js"></script>
     </body>
